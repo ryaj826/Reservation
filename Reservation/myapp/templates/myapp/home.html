@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Reservation System</title>
+    <link rel="stylesheet" href="{% static 'myapp/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>My Reservations</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome to our Reservation System</h2>
+            
+            <!-- Link to create a new reservation -->
+            <a href="{% url 'create_reservation' %}">Create New Reservation</a>
+            
+            <!-- Link to view existing reservations -->
+            <a href="{% url 'view_reservation' %}">View Reservations</a>
+        </section>
+    </main>
+</body>
+</html>
